@@ -1,0 +1,16 @@
+package home;
+
+public class rawkè {
+
+	
+	public static void main(String args []){
+		
+		
+		
+		String a="H \n A \n R \n I \n S";
+		
+		
+		System.out.println(a);
+		
+	}
+}

@@ -1,0 +1,7 @@
+package home;
+import java.util.Scanner;
+public class Square {
+
+	public static void main(String args []){
+	Scanner in=new Scanner(System.in);
+}

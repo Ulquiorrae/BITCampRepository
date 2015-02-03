@@ -1,0 +1,16 @@
+package home;
+import java.util.Scanner;
+public class Palindrome {
+
+	public static void main(String args []){
+		
+		Scanner in=new Scanner(System.in);
+		String word;
+		String forward;
+		String backward;
+		System.out.println("Enter one string: ");
+		word=in.nextLine();
+		
+		
+	}
+}

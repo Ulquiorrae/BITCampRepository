@@ -1,0 +1,10 @@
+package home;
+import java.util.Scanner;
+public class PerfectNumber {
+
+	Scanner in=new Scanner(System.in);
+	
+	int broj;
+	
+	System.out.println("Unesi jedan broj: "); 
+	broj=in.nextInt();
