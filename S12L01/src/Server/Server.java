@@ -21,7 +21,7 @@ public class Server {
 			new Thread(gui).start();
 		}
 		
-	}
+	}//EVO OVO JE TO
 	
 	public static void main(String[] args) throws IOException {
 		
