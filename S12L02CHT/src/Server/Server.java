@@ -11,9 +11,13 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Random;
 
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
 public class Server {
 
-	public static final int port = 1717;
+	public static final int port = 1712;
 
 	public static void serverStart() throws IOException {
 		ServerSocket server = new ServerSocket(port);
@@ -39,6 +43,9 @@ public class Server {
 							client.getInputStream(), clientName);
 					cl.start();
 					new Message("join%" + clientName, "%server%");
+					client.getOutputStream().write(0); //ako je uspjelo logovanje, vratimo mu 0.
+				} else {
+					client.getOutputStream().write(-1); //ako nije uspjelo logovanje, vrati useru -1.
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -48,13 +55,24 @@ public class Server {
 
 	private static String handShake(InputStream is) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
-		String str = br.readLine();
-		str = str.replace("%", "");
-		return str;
+		String username = br.readLine();
+		username = username.replace("%", "");
+		String password = br.readLine();
+		int result = XmlConnection.userLogin(username, password);
+		if(result != 0) {
+			return null;
+		}
+		return username;
 	}
 	
 
 	public static void main(String[] args) {
+		try {
+			new XmlConnection();
+		} catch (SAXException | IOException | ParserConfigurationException e1) {
+			e1.printStackTrace();
+		}
+		
 		try {
 			serverStart();
 		} catch (IOException e) {

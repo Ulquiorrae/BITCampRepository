@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.Socket;
 
 import javax.swing.JButton;
@@ -97,9 +99,24 @@ public class LoginGui {
 			
 			Socket client;
 			try {
-				client = new Socket(host, port);
-				//ChatGui gui = new ChatGui(client);
-				//new Thread(gui).start();
+				client = new Socket(host, port); //napravimo socket
+				
+				OutputStream os = client.getOutputStream();
+				InputStream is = client.getInputStream();
+				
+				//prvo šaljemo username i password
+				os.write((username + "\n").getBytes());
+				os.write((password + "\n").getBytes());
+				
+				//onda čekamo povratnu informaciju od servera, da li je uspjelo logovanje
+				int result = is.read(); //ako je result 0 onda startamo GUI, ako je -1, bacamo error korisniku
+				
+				if(result == 0) {
+					ChatGui gui = new ChatGui(client);
+					new Thread(gui).start();
+				} else {
+					showError("Username or password are not valid!");
+				}
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
