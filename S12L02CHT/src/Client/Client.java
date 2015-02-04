@@ -24,7 +24,7 @@ public class Client {
 			
 			ChatGui gui = new ChatGui(client);
 			new Thread(gui).start();
-			
+			//TEST
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
