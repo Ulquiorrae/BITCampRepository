@@ -1,0 +1,11 @@
+
+public class WebClientTest {
+
+	public static void main(String[] args) {
+		
+		String response = WebClient.get("http://pik.ba/");
+		
+	}
+	
+	
+}

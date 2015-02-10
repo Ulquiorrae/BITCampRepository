@@ -1,0 +1,13 @@
+
+public class URLTest {
+
+	public static void main(String[] args) {
+		
+		testSimpleUrl("http://pik.ba/");
+		
+	}
+
+	private static void testSimpleUrl(String string) {
+		
+	}
+}

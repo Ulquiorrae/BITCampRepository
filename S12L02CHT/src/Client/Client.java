@@ -9,7 +9,7 @@ import GUI.ChatGui;
 import GUI.LoginGui;
 
 public class Client {
-	public static final int port = 1717;
+	public static final int port = 1713;
 	public static final String host = "localhost";
 	
 	

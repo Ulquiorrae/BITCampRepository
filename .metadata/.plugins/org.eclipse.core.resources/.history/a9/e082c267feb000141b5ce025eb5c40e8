@@ -1,0 +1,13 @@
+
+public class URLSplitter {
+
+	public static void main(String[] args) {
+		
+		String URL;
+		
+		
+		
+		
+	}
+	
+}

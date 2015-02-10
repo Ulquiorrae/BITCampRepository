@@ -1,0 +1,60 @@
+import java.net.URL;
+
+public class URL {
+
+	private String schema;
+	private String host;
+	private String path;
+
+	public URL() {
+		this.schema = schema;
+		this.host = host;
+		this.path = path;
+	}
+
+	public String getSchema() {
+		return schema;
+	}
+
+	public void setSchema(String schema) {
+		this.schema = schema;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public static URL parse(String url) {
+		URL newurl = new URL();
+		
+		url.replace("http://", "");
+		String[] pieces = url.split("/");
+		String[] seconde = pieces[2].split("?");
+		newurl.setSchema(pieces[0]);
+		newurl.setHost()(seconde[0]);
+		newurl.setPath(seconde[1]);
+		
+	}
+	
+	
+	public static void main(String[] args) {
+
+		String URL = "http://www.pik.ba/pretraga?burek";
+
+		String[] words = URL.split("//");
+
+	}
+
+}

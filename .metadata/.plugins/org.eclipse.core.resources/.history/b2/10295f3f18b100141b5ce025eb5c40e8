@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.net.UnknownHostException;
+
+public class WebClientTest {
+
+	public static void main(String[] args) {
+
+		try {
+			Response response = WebClient.get("http://pik.ba/");
+			System.out.println(response);
+			System.out.println("Pratim redirekciju...");
+			response = WebClient.get("http://www.pik.ba/");
+			System.out.println(response);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

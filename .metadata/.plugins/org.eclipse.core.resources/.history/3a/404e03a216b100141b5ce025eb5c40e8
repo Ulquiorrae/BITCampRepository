@@ -1,0 +1,7 @@
+
+public class Response {
+
+	private String statusLine;
+	private Map<String, String> headers;
+	
+}

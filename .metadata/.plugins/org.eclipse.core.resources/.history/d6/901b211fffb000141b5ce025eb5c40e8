@@ -1,0 +1,50 @@
+public class URLSplitter {
+
+	private String schema;
+	private String host;
+	private String path;
+
+	public URLSplitter() {
+		this.schema = schema;
+		this.host = host;
+		this.path = path;
+	}
+
+	public String getSchema() {
+		return schema;
+	}
+
+	public void setSchema(String schema) {
+		this.schema = schema;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public static URL parse(String URL) {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+
+		String URL = "http://www.pik.ba/pretraga?burek";
+
+		String[] words = URL.split("//");
+
+	}
+
+}

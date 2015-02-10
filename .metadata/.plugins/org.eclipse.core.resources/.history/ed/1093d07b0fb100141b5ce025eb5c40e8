@@ -1,0 +1,10 @@
+
+public class WebClient {
+
+	public static String get(String string) {
+		return null;
+	}
+
+	
+	
+}

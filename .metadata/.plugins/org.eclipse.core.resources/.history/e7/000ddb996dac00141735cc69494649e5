@@ -1,0 +1,105 @@
+package GUI;
+
+import java.awt.Dimension;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+
+public class LoginGui {
+
+	private TextField username;
+	private JPasswordField password;
+	
+	
+	public LoginGui() {
+		
+		JFrame window = new JFrame("Login");
+		JPanel content = new JPanel();
+		
+		JLabel user = new JLabel("Username:");
+		JLabel pw = new JLabel("Password:");
+		
+		username = new TextField();
+		username.setPreferredSize(new Dimension(250, 20));
+		
+		password = new JPasswordField(20);
+		password.setPreferredSize(new Dimension(250, 20));
+		
+		
+		//privatna klasa handlera za ovaj button
+		JButton loginButton = new JButton("Login");
+		loginButton.addActionListener(new ButtonHandler());
+		
+		
+		
+		//anonimna klasa handlera za ovaj button
+		JButton quitButton = new JButton("Quit");
+		quitButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		
+		});
+		
+		
+		content.add(user);
+		content.add(username);
+		content.add(pw);
+		content.add(password);
+		content.add(loginButton);
+		content.add(quitButton);
+		
+		window.add(content);
+		window.setResizable(false);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(280, 150);
+		window.setVisible(true);
+		
+		
+	}
+	
+	private class ButtonHandler extends KeyAdapter implements ActionListener {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+			String uname = username.getText();
+			String pass = new String(password.getPassword());
+			System.out.println(uname);
+			System.out.println(pass);
+			if(uname.equals("") || pass.equals("")) {
+				showError("You need to enter both username or password!!!");
+			}
+		}
+		
+	}
+	
+	
+	/**
+	 * This method allows us to display program errors and warning useing JOptionPane
+	 * @param message
+	 */
+	private void showError(String message) {
+		JOptionPane.showMessageDialog(null, message, "ERROR", JOptionPane.WARNING_MESSAGE);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		LoginGui logui = new LoginGui();
+		
+	}
+
+	
+	
+}

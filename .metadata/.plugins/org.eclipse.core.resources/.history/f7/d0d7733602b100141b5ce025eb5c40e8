@@ -1,0 +1,15 @@
+
+public class URLTest {
+
+	public static void main(String[] args) {
+		
+		testSimpleUrl("http://pik.ba/");
+		
+	}
+
+	private static void testSimpleUrl(String urlString) {
+		
+		URL parsedUrl = URL.parse(urlString);
+		
+	}
+}

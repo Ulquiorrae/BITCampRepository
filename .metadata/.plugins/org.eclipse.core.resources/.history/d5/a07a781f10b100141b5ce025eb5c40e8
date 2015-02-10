@@ -1,0 +1,21 @@
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class WebClient {
+
+	public static String get(String urlString) throws UnknownHostException, IOException   {
+		
+		URL url = URL.parse(urlString);
+		
+		Socket webSocket = new Socket(url.getHost(), 80);
+		
+		Writer requestWriter = new OutputStreamWriter(webSocket.getOutputStream());
+		
+		requestWriter.
+		return null;
+	}
+
+}

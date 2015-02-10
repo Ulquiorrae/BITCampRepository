@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 
 public class Server {
 
-	public static final int port = 1712;
+	public static final int port = 1713;
 
 	public static void serverStart() throws IOException {
 		ServerSocket server = new ServerSocket(port);
