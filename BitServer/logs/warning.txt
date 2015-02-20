@@ -3,3 +3,12 @@ Tue Feb 10 21:41:37 CET 2015 Client requested missing file ./html/style.html (No
 Tue Feb 10 21:41:37 CET 2015 Client requested missing file ./html/style.html (No such file or directory)
 Tue Feb 10 21:41:38 CET 2015 Client requested missing file ./html/style.html (No such file or directory)
 Tue Feb 10 21:41:38 CET 2015 Client requested missing file ./html/style.html (No such file or directory)
+Fri Feb 20 14:56:13 CET 2015 Client requested missing file ./html/favicon.ico (No such file or directory)
+Fri Feb 20 15:20:14 CET 2015 Was not GET request
+Fri Feb 20 16:11:09 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:11:23 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:11:26 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:11:51 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:12:04 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:12:37 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
+Fri Feb 20 16:12:45 CET 2015 Client requested missing file ./html/?.html (No such file or directory)

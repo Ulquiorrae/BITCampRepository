@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import ba.bitcamp.loger.Logger;
+import ba.bitcamp.logger.Logger;
 
 public class ConnectionListener {
 

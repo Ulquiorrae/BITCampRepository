@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;ba.bitcamp.logger&apos; to &apos;BitServer/src&apos;&#x0A;- Original project: &apos;BitLogger&apos;&#x0A;- Destination element: &apos;BitServer/src&apos;&#x0A;- Original element: &apos;BitLogger/src/ba.bitcamp.logger&apos;" description="Copy package" destination="=BitServer/src" element1="/src&lt;ba.bitcamp.logger" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1424440364383" version="1.0"/>
+</session>

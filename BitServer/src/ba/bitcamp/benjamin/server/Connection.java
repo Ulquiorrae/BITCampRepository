@@ -12,7 +12,7 @@ import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import ba.bitcamp.loger.Logger;
+import ba.bitcamp.logger.Logger;
 
 public class Connection implements Runnable {
 
@@ -38,11 +38,17 @@ public class Connection implements Runnable {
 		}
 
 		String line = null;
+		String tempLine = null;
 		try {
-			while ((line = read.readLine()) != null) {
-				if (line.contains("GET") || line.isEmpty()) {
+			while ((tempLine = read.readLine()) != null) {
+				if (tempLine.contains("GET") || tempLine.contains("POST")) {
+					line = tempLine;
+//					if(line.contains("GET")) {
+//						break;
+//					}
 					break;
 				}
+				System.out.println(tempLine);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
