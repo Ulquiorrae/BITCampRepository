@@ -1,8 +1,0 @@
-public class WebClient {
-
-	public static String get(String urlString) {
-		URL url = URL.parse(urlString);
-		return null;
-	}
-
-}
