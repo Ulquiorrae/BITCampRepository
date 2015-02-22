@@ -8,6 +8,7 @@ import java.util.LinkedList;
  * The contacts model we are using It is both a class definition and connection
  * to the database
  * 
+ * @author benjamin
  *
  */
 public class Contact extends Application {
