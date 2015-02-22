@@ -12,3 +12,4 @@ Fri Feb 20 16:11:51 CET 2015 Client requested missing file ./html/index.html? (N
 Fri Feb 20 16:12:04 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
 Fri Feb 20 16:12:37 CET 2015 Client requested missing file ./html/index.html? (No such file or directory)
 Fri Feb 20 16:12:45 CET 2015 Client requested missing file ./html/?.html (No such file or directory)
+Fri Feb 20 21:51:13 CET 2015 Client requested missing file .\html\favicon.ico (The system cannot find the file specified)

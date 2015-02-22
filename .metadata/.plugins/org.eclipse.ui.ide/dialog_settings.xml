@@ -12,8 +12,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Haris\Downloads\Vjezbe-master\Vjezbe-master\Phonebook"/>
+			<item value="C:\Users\Haris\workspace\BITCampRepository\PhonebookNBC"/>
+			<item value="C:\Users\Haris\workspace\BITCampRepository\BitLogger"/>
+			<item value="C:\Users\Haris\workspace\BITCampRepository\BitServer"/>
 			<item value="/Users/hariskrkalic/Documents/workspace/Messanger_Zadaca_v2"/>
-			<item value="/Users/hariskrkalic/Documents/workspace/BITCampRepository"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
