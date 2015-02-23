@@ -1,0 +1,17 @@
+@(message: String)(taskForm: Form[Task])
+@import helper._
+@main("Welcome to TODO") {
+
+   <h1> @message</h1>
+
+	@helper.form(action = routes.Application.createTask()) {
+    
+    @helper.inputText(taskForm("name"))
+    
+	<input type="submit" value="Add Task"/>
+	
+	
+	
+	    
+}
+}
